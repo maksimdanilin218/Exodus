@@ -25,15 +25,17 @@ body{
     justify-content: space-between;
     height: 100px;
     z-index: 999;
+    border-bottom: solid coral;
     
 }
 .logo{
     height: 90px;
     width: 90px;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .logotip{
+    margin-top: 10px;
     height: 80px;
     width: 90px;
 }
