@@ -834,7 +834,11 @@ body{
 }
 .down__contact {
 }
-.h1__contact {
+.h1__contact__down {
+    font-size: 18px;
+    color: aliceblue;
+    margin-right: 40px;
+    font-family: Circe;
 }
 .contact__icon {
 }
@@ -876,7 +880,10 @@ body{
 .callback__menu__down {
     width: 200px;
 }
-.number__info {
+.number__info__down {
+    color: aliceblue;
+    margin-right: 40px;
+    text-decoration: none;
 }
 .callback__down {
     width: 160px;
