@@ -46,6 +46,7 @@ body{
 .number__info{
     color: aliceblue;
     margin-right: 40px;
+    text-decoration: none;
 }
 .callback{
     width: 160px;
@@ -837,12 +838,41 @@ body{
 }
 .contact__icon {
 }
-.instagram {
+.instagram__down {
+    width: 40px;
+    height: 40px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
 }
-.vk {
+.vk__down {
+    transition: all 0.5s;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    fill: cornflowerblue;
 }
-.facebook {
+.facebook__down {
+    transition: all 0.5s;
+    width: 40px;
+    height: 40px;
+    fill: blue;
 }
+.instagram__down:hover {
+    transform: scale(1.5);
+}
+.vk__down:hover {
+    transform: scale(1.5);
+}
+.facebook__down:hover {
+    transform: scale(1.5);
+}
+
 .callback__menu__down {
     width: 200px;
 }

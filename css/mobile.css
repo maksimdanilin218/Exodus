@@ -2,6 +2,7 @@
     .header{
         background-image: none;
         width: auto;
+        height: 700px;
     }
     .header__menu{
         width: auto;
@@ -39,6 +40,13 @@
         width: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 270px;
+    }
+    .h1__contact{
+        margin-left: 20px;
+    }
+    .contact__icon{
+        margin-right: 20px;
     }
     /* info__gym */
     .info__gym{
@@ -295,9 +303,35 @@
         width: 200px;
         padding-left: 20px;
     }
+    .contact__icon__down{
+        width: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .instagram__down {
+        width: 30px;
+        height: 30px;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        border-radius: 10px;
+    }
+    .vk__down {
+        width: 30px;
+        height: 30px;
+    }
+    .facebook__down {
+        width: 30px;
+        height: 30px;
+    }
+    
     .h1__contact{
         margin-right: 20px;
-        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 14px;
     }
     .number__info{
         margin-right: 20px;
