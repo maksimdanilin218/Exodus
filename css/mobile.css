@@ -1,70 +1,78 @@
 @media screen and (max-width: 480px){
     .header{
         background-image: none;
-        max-width: 480px;
+        width: auto;
     }
     .header__menu{
-        max-width: 480px;
+        width: auto;
     }
     .logo{
         margin-left: 10px;
     }
     .logotip{
         height: 60px;
-        width: 60px;
+        width: 80px;
     }
     .callback{
         display: none;
     }
     /* header zagolovok */
     .header__zagolovok{
-        max-width: 480px;
+        width: auto;
     }
     .h1__zagolovok{
         margin-left: auto;
         margin-right: auto;
+        width: 350px;
     }
     .p__zagolovok{
-        max-width: 400px;
-        margin-left: auto;margin-right: auto;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .aboniment__btn{
-        width: 250px;
+        width: 200px;
         margin-left: auto;
         margin-right: auto;
     }
     .contact{
-        width: 440px;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
     }
     /* info__gym */
     .info__gym{
         background-image: none;
-        max-width: 480px;
-        height: 1800px
+        width: auto;
+        height: 1900px
     }
     .h1__gym{
-        max-width: 480px;
-        font-size: 32px;
+        max-width: 350px;
+        font-size: 28px;
     }
     .gym__grid{
-        max-width: 480px;
+        width: 350px;
         grid-template-columns: repeat(1,6fr);
     }
     .free__tren{
-        max-width: 470px;
+        width: auto;
+        border-width: thin;
     }
     .img__free__tren{
         margin-left: 10px;
     }
     .h1__free__tren{
+        margin-left: 10px;
         font-size: 14px;
-        width: 220px;
+        width: 200px;
+    }
+    .btn__free__tren{
+        margin-right: 10px;
     }
     /* fitness__info */
     .fitness__info{
-        max-width: 480px;
+        margin-top: 40px;
+        width: auto;
     }
     .h1__fitness__info{
         margin-left: auto;
@@ -73,36 +81,37 @@
     }
     .information__glub{
         display: block;
-        width: 450px;
+        width: 350px;
+        height: 600px;
         margin-left: auto;
         margin-right: auto;
     }
     .p__fitness__info{
-        width: 420px;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
         font-size: 20px;
     }
     .img__fitness{
-        max-width: 400px;
-        height: 300px;
-        margin-left: 20px;
+        max-width: 350px;
+        height: 250px;
     }
     /* statistica__club */
     .statistica__club{
-        max-width: 480px;
+        width: auto;
         height: 650px;
     }
     .h1__statistics__club{
         margin: 0;
-        max-width: 460px;
+        width: 250px;
         font-size: 32px;
-        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .statistiga__flex{
         display: block;
         margin-top: 40px;
-        max-width: 480px;
+        width: auto;
         text-align: center;
     }
     .statistica1{
@@ -135,13 +144,13 @@
     }
     /* trener */
     .trener{
-        max-width: 480px;
-        height: 1750px;
+        width: auto;
+        height: 1850px;
     }
     .h1__trener{
         margin-left: auto;
         margin-right: auto;
-        max-width: 440px;
+        width: 290px;
         font-size: 32px;
     }
     .trener__flex{
@@ -149,33 +158,42 @@
         max-width: 260px;
     }
     .trener__card1{
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-bottom: 60px;
         box-shadow: 3px 3px 15px 3px coral;
     }
     .profil__trener{
-        margin-top: 30px;
+
     }
     .h1__name__trener{
         margin-top: 200px;
     }
     .trener__card2{
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-bottom: 60px;
         box-shadow: 3px 3px 15px 3px coral;
     }
     .trener__card3{
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-bottom: 60px;
         box-shadow: 3px 3px 15px 3px coral;
     }
     .trener__card4{
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-bottom: 30px;
         box-shadow: 3px 3px 15px 3px coral;
     }
     /* aboniment__container */
     .aboniment__container{
-        max-width: 480px;
+        width: auto;
         height: 3000px;
     }
     .h1__aboniment{
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -194,19 +212,21 @@
     }
     /* feedback__container */
     .feedback__container{
-        max-width: 480px;
+        width: auto;
         height: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
     .h1__feedback{
+        width: 250px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
     .feedback__flex{
         display: block;
         height: 700px;
-        max-width: 480px;
+        width: auto;
     }
     .card__feedback{
         margin-left: auto;
@@ -218,14 +238,20 @@
         height: 300px;
         padding-left: 20px;
     }
+    .p__feedback{
+        width: 350px;
+    }
     .btn__feedback{
-        margin-top: 80px;
+        margin-top: 50px;
+        width: 200px;
     }
     /* adress__container */
     .adress__container{
-        max-width: 480px;
+        width: auto;
+        height: 850px;
     }
     .h1__adress{
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -257,19 +283,27 @@
     }
     /* down menu */
     .down__menu{
-        max-width: 480px;
+        width: auto;
 
     }
     .logotip__down{
-        padding-top: 30px;
-        width: 60px;
+        padding-top: 10px;
+        width: 70px;
         height: 60px;
     }
     .down__contact{
         width: 200px;
-        padding-left: 40px;
+        padding-left: 20px;
     }
     .h1__contact{
+        margin-right: 20px;
         font-size: 16px;
+    }
+    .number__info{
+        margin-right: 20px;
+    }
+    .callback__down{
+        width: 120px;
+        margin-left: 10px;
     }
 }

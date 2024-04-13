@@ -168,7 +168,8 @@ body{
     width: 200px;
     background: linear-gradient(90deg, rgba(236,172,19,1) 1%, rgba(166,70,10,1) 48%, rgba(255,0,0,1) 100%);
     animation: bounceIn;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 .a__abon{
     font-size: 16px;
@@ -179,9 +180,11 @@ body{
 }
 /*contact icon*/
 .contact{
+    width: 400px;
     margin-top: 400px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .h1__contact{
     font-size: 18px;
@@ -256,6 +259,7 @@ body{
     grid-template-columns: repeat(3,2fr);
     row-gap: 30px;
     justify-items: center;
+    
 }
 /* card1 */
 .card1__gym {
