@@ -49,14 +49,14 @@ body{
     text-decoration: none;
 }
 .callback{
-    width: 160px;
+    width: 180px;
     height: 40px;
     border-radius: 10px;
     background: linear-gradient(90deg, rgba(236,172,19,1) 1%, rgba(166,70,10,1) 48%, rgba(255,0,0,1) 100%);
     color: aliceblue;
     margin-right: 230px;
     font-family: Shadows Into Light;
-    font-size: 16px;
+    font-size: 15px;
 }
 .a__callback{
     text-decoration: none;
@@ -171,13 +171,12 @@ body{
     animation: bounceIn;
     animation-duration: 2s;
     animation-delay: 1s;
+    font-size: 15px;
 }
 .a__abon{
-    font-size: 16px;
     color: aliceblue;
     text-decoration: none;
     font-family: Shadows Into Light;
-    font-size: 17px;
 }
 /*contact icon*/
 .contact{
