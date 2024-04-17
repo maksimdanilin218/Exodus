@@ -544,7 +544,7 @@ body{
     margin-top: 80px;
 }
 .trener__card1 {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/trener1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/index.img/trener1.jpg);
     background-repeat: no-repeat;
     width: 255px;
     height: 340px;
@@ -596,21 +596,21 @@ body{
 }
 
 .trener__card2{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/trener__ard2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/index.img/trener__ard2.jpg);
     background-repeat: no-repeat;
     width: 255px;
     height: 340px;
     text-align: center;
 }
 .trener__card3{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/trener3.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/index.img/trener3.jpg);
     background-repeat: no-repeat;
     width: 255px;
     height: 340px;
     text-align: center;
 }
 .trener__card4{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/trener4.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../trener__img/index.img/trener4.jpg);
     background-repeat: no-repeat;
     width: 255px;
     height: 340px;
