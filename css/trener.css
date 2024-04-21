@@ -170,18 +170,143 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+.header__zagolovok2 {
+}
+.h1__zagolovok2 {
+    padding-top: 100px;
+    width: 400px;
+    font-size: 50px; 
+    background: linear-gradient(90deg, rgba(236,172,19,1) 1%, rgba(166,70,10,1) 48%, rgba(255,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.p__zagolovok2 {
+    font-size: 18px;
+    color: aliceblue;
+    width: 600px;
+    font-family: Shadows Into Light;
+}
+.aboniment__btn2 {
+}
+.see__abon2 {
+    margin-top: 30px;   
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    background: linear-gradient(90deg, rgba(236,172,19,1) 1%, rgba(166,70,10,1) 48%, rgba(255,0,0,1) 100%);
+    animation: bounceIn;
+    animation-duration: 2s;
+    font-size: 15px;
+}
+.a__abon {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Shadows Into Light;
+}
+/* contact */
+.contact{
+    width: 400px;
+    margin-top: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h1__contact{
+    font-size: 18px;
+    color: aliceblue;
+    margin-right: 40px;
+    font-family: Circe;
+}
+.contact__icon{
+}
+.instagram{
+    transition: all 0.5s;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.instagram:hover{
+    transform: scale(1.2);
+}
+.vk{
+    transition: all 0.5s;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    fill: cornflowerblue;
+}
+.vk:hover{
+    transform: scale(1.2);
+}
+.facebook{
+    transition: all 0.5s;
+    width: 40px;
+    height: 40px;
+    fill: blue;
+}
+.facebook:hover{
+    transform: scale(1.2);
+}
+
 .h1__header{
     margin-top: 0;
     padding-top: 150px;
-    padding-left: 90px;
+    padding-left: 40px;
     color: white;
     font-size: 46px;
     font-family: Russo One;
+    border-bottom: solid coral;
+    width: 480px;
 }
 /*trener card*/
-.header__zagolovok {
+
+.icon__seti{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.h1__header {
+.p__social {
+    font-size: 18px;
+    color: #fff;
+}
+.instagram{
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.instagram:hover{
+    transform: scale(1.2);
+}
+.vk{
+    transition: all 0.5s;
+    
+    width: 40px;
+    height: 40px;
+    fill: cornflowerblue;
+}
+.vk:hover{
+    transform: scale(1.2);
+}
+
+/*header2*/
+.header2{
+    width: 1440px;
+    height: 2600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .trener__card {
     margin-top: 150px;
@@ -196,10 +321,10 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-/*header2*/
-.header2{
-
+    border-radius: 20px;
+    animation: backInLeft;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 .trener__card2{
     margin-top: 80px;
@@ -212,6 +337,10 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    animation: backInRight;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    border-radius: 20px;
 }
 .trener__card3{
     margin-top: 80px;
@@ -224,13 +353,33 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    animation: backInLeft;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    border-radius: 20px;
+}
+.trener__card4{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: 100px;
+    width: 900px;
+    height: 450px;
+    border: solid coral;
+    background-color: #1a1818;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: backInRight;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    border-radius: 20px;
 }
 .img__trener {
 }
 .info_trener {
     height: 350px;
+    width: 400px;
 }
-
 .img__card{
     width: 250px;
     height: 350px;
@@ -243,11 +392,14 @@ body{
     margin-top: 0;
 }
 .p__trener{
-    width: 300px;
+    width: 450px;
     font-family: Russo One;
     color: white;
     font-size: 18px;
     text-align: inherit;
+}
+.span__trener{
+    color: coral;
 }
 .btn__trener {
     padding-top: 30px;
@@ -263,3 +415,16 @@ body{
     color: black;
     font-size: 18px;
 }
+/* button see-more */
+.button__see-more {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+.btn__see-more {
+    color: coral;
+    font-size: 24px;
+    text-decoration: none;
+}
+
