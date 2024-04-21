@@ -163,7 +163,7 @@ body{
     color: white;
 }
 .header__zagolovok{
-    background-image: url(/img/index/header__bgi.png);
+    background-image: url(../img/index/header__bgi.png);
     background-repeat: no-repeat;
     width: 1440px;
     height: 850px;
