@@ -324,7 +324,7 @@ body{
     border-radius: 20px;
     animation: backInLeft;
     animation-duration: 2s;
-    animation-delay: 1s;
+    
 }
 .trener__card2{
     margin-top: 80px;
@@ -339,7 +339,7 @@ body{
     align-items: center;
     animation: backInRight;
     animation-duration: 2s;
-    animation-delay: 1s;
+    
     border-radius: 20px;
 }
 .trener__card3{
@@ -355,7 +355,7 @@ body{
     align-items: center;
     animation: backInLeft;
     animation-duration: 2s;
-    animation-delay: 1s;
+    
     border-radius: 20px;
 }
 .trener__card4{
@@ -371,7 +371,7 @@ body{
     align-items: center;
     animation: backInRight;
     animation-duration: 2s;
-    animation-delay: 1s;
+    
     border-radius: 20px;
 }
 .img__trener {
@@ -416,15 +416,21 @@ body{
     font-size: 18px;
 }
 /* button see-more */
-.btn__see-more {
+
+.btn {
+    color: black;
+    background-color: coral;
+    border-radius: 10px;
+    font-size: 24px;
+    text-decoration: none;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
+    cursor: pointer;
 }
-.a__see-more {
-    color: coral;
-    font-size: 24px;
-    text-decoration: none;
+/* данные для появления кноки смотреть еще */
+.card:not(:nth-child(-n + 4)){
+    display: none;
 }
 
