@@ -19,6 +19,7 @@
     }
     /* header */
     .header{
+        height: 1150px;
         width: auto;
         background-image: none;
     }
@@ -62,5 +63,65 @@
     }
     .h1__contact{
         margin-right: 0;
+    }
+    /* down menu */
+    .down__menu{
+        width: auto;
+        height: 120px;
+    }
+    .down__menu__flex{
+        text-align: center;
+    }
+    .logotip__down{
+        padding-top: 30px;
+        margin-right: 5px;
+        width: 60px;
+        height: 50px;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .down__contact{
+        width: 130px;
+        margin-left: 10px;
+    }
+    .contact__icon__down{
+        width: 120px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .instagram__down {
+        width: 30px;
+        height: 30px;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        border-radius: 10px;
+    }
+    .vk__down {
+        width: 30px;
+        height: 30px;
+    }
+    .facebook__down {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .h1__contact__down{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .number__info__down{
+        margin-top: 20px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .callback__down{
+        width: 120px;
+        height: 45px;
     }
 }    
