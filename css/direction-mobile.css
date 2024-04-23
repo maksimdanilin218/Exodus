@@ -1,0 +1,199 @@
+@media screen and (max-width: 480px){
+    .header{
+        background-image: none;
+        width: auto;
+        height: 700px;
+    }
+    .header__menu{
+        width: auto;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .logotip{
+        height: 60px;
+        width: 80px;
+    }
+    .callback{
+        display: none;
+    }
+    /* header */
+    .header{
+        width: auto;
+        background-image: none;
+    }
+    .header__zagolovok{
+        width: auto;
+        background-image: none;
+    }
+    .h1__zagolovok2{
+        width: 300px;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p__zagolovok2{
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboniment__btn2{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .a__abon{
+        font-size: 14px;
+    }
+    .contact{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+    }
+    .h1__contact{
+        width: 170px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .contact__icon{
+        margin-right: 10px;
+    }
+    /* direction container */
+    .direction-container{
+        width: auto;
+        height: 4900px;
+        background-image: none;
+    }
+    .h1-direction{
+        width: 310px;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .direction-info{
+        width: 330px;
+    }
+    .functional-training{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid coral;
+        border-radius: 10px;
+        text-align: center;
+        height: 680px;
+    }
+    .cardio-training{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid coral;
+        border-radius: 10px;
+        text-align: center;
+        height: 700px;
+    }
+    .strenght-training{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid coral;
+        border-radius: 10px;
+        text-align: center;
+        height: 700px;
+    }
+    .group-training{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid coral;
+        border-radius: 10px;
+        text-align: center;
+        height: 700px;
+    }
+    .children-training{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid coral;
+        border-radius: 10px;
+        text-align: center;
+        height: 700px;
+    }
+    .personal-training{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid coral;
+        border-radius: 10px;
+        text-align: center;
+        height: 700px;
+    }
+    .img-direction{
+        margin-top: 20px;
+        width: 320px;
+    }
+    .direction-info2{
+        width: 300px;
+    }
+    .h1-direction-info{
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p-direction{
+        margin-left: 10px;
+    }
+    /* down menu */
+    .down__menu{
+        width: auto;
+        height: 120px;
+
+    }
+    .logotip__down{
+        padding-top: 10px;
+        width: 70px;
+        height: 60px;
+    }
+    .down__contact{
+        width: 200px;
+    }
+    .contact__icon__down{
+        width: 120px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .instagram__down {
+        width: 30px;
+        height: 30px;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        border-radius: 10px;
+    }
+    .vk__down {
+        width: 30px;
+        height: 30px;
+    }
+    .facebook__down {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .h1__contact__down{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .number__info__down{
+        margin-top: 20px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .callback__down{
+        width: 120px;
+        height: 45px;
+    }
+}    
