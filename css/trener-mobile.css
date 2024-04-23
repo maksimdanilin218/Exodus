@@ -1,0 +1,114 @@
+@media screen and (max-width: 480px){
+    .header{
+        background-image: none;
+        width: auto;
+        height: 700px;
+    }
+    .header__menu{
+        width: auto;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .logotip{
+        height: 60px;
+        width: 80px;
+    }
+    .callback{
+        display: none;
+    }
+    /* header zagolovok */
+    .header__zagolovok{
+        width: auto;
+    }
+    .h1__zagolovok2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+    }
+    .p__zagolovok2{
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboniment__btn2{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .a__abon{
+        font-size: 14px;
+    }
+    .contact{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+    }
+    .h1__contact{
+        width: 170px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .contact__icon{
+        margin-right: 10px;
+    }
+    /* header2 */
+    .header2{
+        width: auto;
+    }
+    .h1__header{
+        width: 200px;
+        font-size: 30px;
+    }
+    /* trener__card */
+    .trener__card-right{
+        display: block;
+        width: 340px;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trener__card-left{
+        display: block;
+        width: 340px;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img__trener{
+        width: 255px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info_trener{
+        width: 340px;
+    }
+    .name__trener{
+        width: 300px;
+        margin: 10px auto 10px auto;
+    }
+    .p__trener{
+        width: 330px;
+        margin-left: 10px;
+    }
+    .icon__seti{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .btn__trener{
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+    }
+    .see-more0container{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .card:not(:nth-child(-n + 8)){
+        display: none;
+    }
+}
