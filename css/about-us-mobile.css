@@ -1,0 +1,66 @@
+@media screen and (max-width: 480px){
+    .header{
+        background-image: none;
+        width: auto;
+        height: 700px;
+    }
+    .header__menu{
+        width: auto;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .logotip{
+        height: 60px;
+        width: 80px;
+    }
+    .callback{
+        display: none;
+    }
+    /* header */
+    .header{
+        width: auto;
+        background-image: none;
+    }
+    .header__zagolovok{
+        width: auto;
+    }
+    .h1__zagolovok{
+        width: 300px;
+        font-size: 40px;
+    }
+    .header__info{
+        width: 330px;
+        height: 950px;
+        display: block;
+    }
+    .p-about-us{
+        width: 320px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .svg__info{
+        width: 300px;
+        grid-template-columns: repeat(1,3fr);
+        margin-left: 10px;
+    }
+    .time{
+        width: 300px;
+    }
+    .star{
+        width: 300px;
+    }
+    .dumbbell{
+        width: 300px;
+    }
+    .btn-abon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact{
+        width: auto;
+    }
+    .h1__contact{
+        margin-right: 0;
+    }
+}    
