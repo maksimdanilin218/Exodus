@@ -9,10 +9,12 @@
     }
     .logo{
         margin-left: 10px;
-    }
-    .logotip-header{
+        width: 70px;
         height: 60px;
-        width: 80px;
+    }
+    .logotip{
+        height: 60px;
+        width: 70px;
     }
     .callback{
         display: none;
@@ -33,7 +35,7 @@
         margin-right: auto;
     }
     .p__zagolovok2{
-        max-width: 350px;
+        max-width: 330px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -149,13 +151,16 @@
         height: 120px;
 
     }
+    .logo-down{
+        margin-left: 5px;
+    }
     .logotip__down{
         padding-top: 10px;
         width: 70px;
         height: 60px;
     }
     .down__contact{
-        width: 200px;
+        width: 150px;
     }
     .contact__icon__down{
         width: 120px;
@@ -189,8 +194,11 @@
     }
     .number__info__down{
         margin-top: 20px;
-        font-size: 14px;
+        font-size: 12px;
         margin-right: 0;
+    }
+    .callback__menu__down{
+        width: 120px;
     }
     .callback__down{
         width: 120px;

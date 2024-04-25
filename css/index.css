@@ -17,7 +17,7 @@ body{
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    width: auto;
     padding-top: 20px;
     position: sticky;
     top: 0;
@@ -839,7 +839,7 @@ body{
 }
 /* down menu */
 .down__menu {
-    width: 1440px;
+    width: auto;
     height: 120px;
     margin-top: 80px;
     margin-left: auto;
@@ -856,8 +856,8 @@ body{
     height: 40px;
 }
 .logotip__down {
-    width: 120px;
-    height: 100px;
+    width: 90px;
+    height: 80px;
 }
 .down__contact {
 }

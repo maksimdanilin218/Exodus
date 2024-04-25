@@ -8,7 +8,7 @@ body{
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    width: auto;
     padding-top: 20px;
     position: sticky;
     top: 0;
@@ -259,7 +259,9 @@ body{
 .direction-container {
     background-image: url(../img/index/dark__bgi.png);
     width: 1440px;
-    height: 2740px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2800px;
     background-repeat: no-repeat;
 }
 .h1-direction {
@@ -281,30 +283,40 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: solid coral;
+    padding-bottom: 20px;
 }
 .cardio-training{
     margin-top: 90px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: solid coral;
+    padding-bottom: 20px;
 }
 .strenght-training{
     margin-top: 90px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: solid coral;
+    padding-bottom: 20px;
 }
 .group-training{
     margin-top: 90px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: solid coral;
+    padding-bottom: 20px;
 }
 .personal-training{
     margin-top: 90px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: solid coral;
+    padding-bottom: 20px;
 }
 .children-training{
     margin-top: 90px;
@@ -345,7 +357,7 @@ body{
 /* down menu */
 .down__menu {
     margin-top: 80px;
-    width: 1440px;
+    width: auto;
     height: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -355,6 +367,7 @@ body{
     height: 120px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo {
     width: 120px;

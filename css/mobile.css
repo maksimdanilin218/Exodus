@@ -12,7 +12,7 @@
     }
     .logotip{
         height: 60px;
-        width: 80px;
+        width: 70px;
     }
     .callback{
         display: none;
@@ -299,7 +299,7 @@
     /* down menu */
     .down__menu{
         width: auto;
-        height: 140px;
+        height: 120px;
 
     }
     .logotip__down{
