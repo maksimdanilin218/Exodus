@@ -24,12 +24,14 @@
     .h1__zagolovok{
         margin-left: auto;
         margin-right: auto;
-        width: 350px;
+        width: 300px;
+        font-size: 40px;
     }
     .p__zagolovok{
-        max-width: 350px;
+        max-width: 330px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 18px;
     }
     .aboniment__btn{
         width: 200px;

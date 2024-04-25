@@ -64,7 +64,7 @@
     /* direction container */
     .direction-container{
         width: auto;
-        height: 4900px;
+        height: 5100px;
         background-image: none;
     }
     .h1-direction{
@@ -75,6 +75,7 @@
     }
     .direction-info{
         width: 330px;
+        height: 4850px;
     }
     .functional-training{
         display: block;
