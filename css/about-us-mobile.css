@@ -129,3 +129,12 @@
         height: 40px;
     }
 }    
+@media screen and (min-width: 1550px){
+    .header__menu{
+        width: auto;
+    }
+    .down__menu{
+        width: auto;
+        height: 120px;
+    }
+}
