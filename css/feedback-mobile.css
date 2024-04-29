@@ -33,12 +33,13 @@
         font-size: 40px;
         margin-left: auto;
         margin-right: auto;
-
+        text-align: center;
     }
     .p__zagolovok{
         max-width: 330px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
     .aboniment__btn{
         width: 200px;
