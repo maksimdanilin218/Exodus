@@ -257,7 +257,7 @@ body{
     background-image: url(../img/index/dark__bgi.png);
     background-repeat: no-repeat;
     width: 1440px;
-    height: 2300px;
+    height: 2500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -265,10 +265,16 @@ body{
     padding-top: 90px;
     margin-left: auto;
     margin-right: auto;
-    width: 650px;
+    width: 750px;
     font-size: 50px;
     color: white;
     border-bottom: solid coral;
+    text-align: center;
+}
+.feedback-svg-header{
+    width: 50px;
+    height: 50px;
+    fill: coral;
 }
 .feedback-block {
     width: 1200px;
@@ -279,25 +285,39 @@ body{
 .feedback-card {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 90px;
-    width: 800px;
+    margin-top: 140px;
+    width: 600px;
+    height: 220px;
+    border: solid coral;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
 }
 .right-card{
-    margin-left: 400px;
+    margin-left: 600px;
 }
 .img-feedback {
-    width: 255px;
-    height: 255px;
+    margin-top: -70px;
+    margin-left: -100px;
+    width: 155px;
+    height: 155px;
     background-size: cover;
+    border-radius: 50%;
+    border-color: coral;
 }
 .feedback-info {
 }
 .h1-name {
     color: coral;
+    font-size: 30px;
+    width: 370px;
+    text-align: end;
+    margin-left: 50px;
 }
 .p-info-feedback {
     color: white;
     width: 500px;
+    font-size: 20px;
+    margin-top: 30px;
 }
 .btn-feedback {
     margin-top: 40px;

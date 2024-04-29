@@ -93,7 +93,7 @@
     .h1__fitness__info{
         margin-left: auto;
         margin-right: auto;
-        font-size: 32px;
+        font-size: 24px;
     }
     .information__glub{
         display: block;
@@ -121,7 +121,7 @@
     .h1__statistics__club{
         margin: 0;
         width: 250px;
-        font-size: 32px;
+        font-size: 24px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -167,8 +167,8 @@
     .h1__trener{
         margin-left: auto;
         margin-right: auto;
-        width: 290px;
-        font-size: 32px;
+        width: 330px;
+        font-size: 24px;
     }
     .trener__flex{
         display: block;
@@ -213,6 +213,7 @@
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 24px;
     }
     .aboniment__flex{
         display: block;
@@ -239,6 +240,7 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        font-size: 24px;
     }
     .feedback__flex{
         display: block;
@@ -269,8 +271,11 @@
     }
     .h1__adress{
         width: 330px;
+        margin-top: 90px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 24px;
+        text-align: center;
     }
     .adress__flex{
         display: block;

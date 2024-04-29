@@ -30,10 +30,12 @@
     .h1__zagolovok{
         width: 300px;
         font-size: 40px;
+        text-align: center;
     }
     .header__info{
         width: 330px;
         height: 950px;
+        margin-top: 40px;
         display: block;
     }
     .p-about-us{

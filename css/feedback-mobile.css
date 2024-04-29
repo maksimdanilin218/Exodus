@@ -33,6 +33,7 @@
         font-size: 40px;
         margin-left: auto;
         margin-right: auto;
+
     }
     .p__zagolovok{
         max-width: 330px;
@@ -64,13 +65,17 @@
     /* feedback-container */
     .feedback-container{
         width: auto;
-        height: 4000px;
+        height: 3500px;
         background-image: none;
     }
     .h1-feedback{
         text-align: center;
         width: 300px;
-        font-size: 30px;
+        font-size: 24px;
+    }
+    .feedback-svg-header{
+        width: 30px;
+        height: 30px;
     }
     .feedback-block{
         width: auto;
@@ -80,12 +85,20 @@
         margin-right: auto;
         display: block;
         width: 330px;
+        height: 400px;
         text-align: center;
     }
     .img-feedback{
         margin-left: auto;
         margin-right: auto;
-        border-radius: 20px;
+        border-radius: 50%;
+    }
+    .h1-name{
+        font-size: 25px;
+        width: 290px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .p-info-feedback{
         width: 330px;
