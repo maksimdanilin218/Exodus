@@ -1,0 +1,120 @@
+@media screen and (max-width: 480px){
+    .header{
+        background-image: none;
+        width: auto;
+        height: 700px;
+    }
+    .header__menu{
+        width: auto;
+    }
+    .logo{
+        margin-left: 10px;
+        width: 70px;
+        height: 60px;
+    }
+    .logotip{
+        height: 60px;
+        width: 70px;
+    }
+    .callback{
+        display: none;
+    }
+    /* quest-container */
+    .guest-container{
+        background-image: none;
+        width: 360px;
+        height: 800px;
+    }
+    .h1-guest-name{
+        width: 290px;
+        font-size: 20px;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .info-container{
+        display: block;
+    }
+    .registration{
+        width: 200px;
+        display: grid;
+        grid-template-columns: repeat(1,5fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info-regist{
+        margin-top: 40px;
+    }
+
+
+
+    /* down menu */
+    .down__menu{
+        width: auto;
+        height: 120px;
+
+    }
+    .logo-down{
+        margin-left: 5px;
+    }
+    .logotip__down{
+        padding-top: 10px;
+        width: 70px;
+        height: 60px;
+    }
+    .down__contact{
+        width: 150px;
+    }
+    .contact__icon__down{
+        width: 120px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .instagram__down {
+        width: 30px;
+        height: 30px;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        border-radius: 10px;
+    }
+    .vk__down {
+        width: 30px;
+        height: 30px;
+    }
+    .facebook__down {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .h1__contact__down{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .number__info__down{
+        margin-top: 20px;
+        font-size: 12px;
+        margin-right: 0;
+    }
+    .callback__menu__down{
+        width: 120px;
+    }
+    .callback__down{
+        width: 120px;
+        height: 45px;
+    }
+}
+@media screen and (min-width: 1550px){
+    .header__menu{
+        width: auto;
+    }
+    .down__menu{
+        width: auto;
+        height: 120px;
+    }
+}  

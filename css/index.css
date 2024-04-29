@@ -425,6 +425,10 @@ body{
 .span__free__tren {
     color: coral;
 }
+.a-free-tren{
+    text-decoration: none;
+    color: white;
+}
 .btn__free__tren {
     margin-right: 30px;
     height: 30px;
