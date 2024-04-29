@@ -6,6 +6,7 @@
     }
     .header__menu{
         width: auto;
+        height: 90px;
     }
     .logo{
         margin-left: 10px;
@@ -37,7 +38,9 @@
         display: block;
     }
     .registration{
-        width: 200px;
+        width: 250px;
+        height: 300px;
+        padding: 10px 0;
         display: grid;
         grid-template-columns: repeat(1,5fr);
         margin-left: auto;
@@ -46,9 +49,6 @@
     .info-regist{
         margin-top: 40px;
     }
-
-
-
     /* down menu */
     .down__menu{
         width: auto;

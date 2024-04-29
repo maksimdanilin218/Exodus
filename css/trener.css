@@ -9,15 +9,13 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-    padding-top: 20px;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     height: 100px;
     z-index: 999;
-    border-bottom: solid coral;
-    
+    border-bottom: solid coral;   
 }
 .logo{
     height: 90px;
@@ -343,6 +341,7 @@ body{
     border-radius: 20px;
 }
 .img__trener {
+    margin-top: 20px;
 }
 .info_trener {
     height: 350px;
@@ -352,6 +351,7 @@ body{
     width: 250px;
     height: 350px;
     background-size: cover;
+    border-radius: 10px;
 }
 .name__trener{
     font-family: Russo One;
