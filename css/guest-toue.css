@@ -278,16 +278,14 @@ li::marker{
     width: 90px;
     height: 80px;
 }
-.down__contact {
-}
+
 .h1__contact__down {
     font-size: 18px;
     color: aliceblue;
     margin-right: 40px;
     font-family: Circe;
 }
-.contact__icon {
-}
+
 .instagram__down {
     width: 40px;
     height: 40px;
@@ -339,6 +337,3 @@ li::marker{
     color: aliceblue;
     font-size: 16px;
 }
-.a__callback {
-}
-
