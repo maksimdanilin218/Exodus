@@ -24,7 +24,7 @@
     .guest-container{
         background-image: none;
         width: 360px;
-        height: 800px;
+        height: 1000px;
     }
     .h1-guest-name{
         width: 290px;
@@ -36,10 +36,11 @@
     }
     .info-container{
         display: block;
+        height: 700px;
     }
     .registration{
         width: 250px;
-        height: 300px;
+        height: 470px;
         padding: 10px 0;
         display: grid;
         grid-template-columns: repeat(1,5fr);
