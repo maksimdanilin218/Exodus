@@ -136,7 +136,10 @@
     }
     .img-direction{
         margin-top: 20px;
-        width: 320px;
+        width: 250px;
+        height: 250px;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
     .direction-info2{
         width: 300px;
