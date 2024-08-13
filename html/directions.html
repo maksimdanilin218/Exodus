@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- подключение стилей анимаций -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/libs/animate.css">
+    <script src="../dist/wow.min.js"></script>
+    <script> new WOW().init();</script>
     <!-- Open sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <!-- Russo One -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../img/index/logotip.png">
     <link rel="stylesheet" href="../css/directions.css">
-    <link rel="stylesheet" href="../css/direction-mobile.css">
+    <link rel="stylesheet" href="../css/burger-menu-style.css">
     <title>Наши Направления</title>
 </head>
+
 <body>
     <div class="header__menu">
-        <div class="logo">
-            <img class="logotip" src="../img/index/logotip.png" alt="">
-        </div>
-        <div class="btn__info">
-            <p class="number__info">+7(927)123-12-234</p>
-            <button class="callback"><a class="a__callback" href="">Обратный звонок</a></button>
+        <a href="index.html"><img class="header__logo" src="../img/index/logotip.png" alt=""></a>
+        <div class="header__info">
+            <a href="" class="header__text-info">
+                <p class="header__text-info">+7(927)123-12-234</p>
+            </a>
+            <button class="callback header__button button__hover"><a class="a__callback header__button-a"
+                    href="">Обратный звонок</a></button>
             <!-- Информация после нажатия бургер кнопки -->
             <nav class="nav__info">
                 <nav class="nav__burger1">Основное</nav>
                 <ul class="ul__burger">
-                    <a class="a__burger" href="../index.html"><li class="li__burger">Главная</li></a>
-                    <a class="a__burger" href="../html/about-us.html"><li class="li__burger">О нас</li></a>
-                    <a class="a__burger" href="../html/trener.html"><li class="li__burger">Тренерский состав</li></a>
-                    <a class="a__burger" href="../html/feedback.html"><li class="li__burger">Отзывы</li></a>
-                    <a class="a__burger" href="../html/directions.html"><li class="li__burger">Наши направления</li></a>
+                    <a class="a__burger" href="../index.html">
+                        <li class="li__burger">Главная</li>
+                    </a>
+                    <a class="a__burger" href="../html/about-us.html">
+                        <li class="li__burger">О нас</li>
+                    </a>
+                    <a class="a__burger" href="../html/trener.html">
+                        <li class="li__burger">Тренерский состав</li>
+                    </a>
+                    <a class="a__burger" href="../html/feedback.html">
+                        <li class="li__burger">Отзывы</li>
+                    </a>
+                    <a class="a__burger" href="../html/directions.html">
+                        <li class="li__burger">Наши направления</li>
+                    </a>
                 </ul>
             </nav>
             <!-- Иконка Бургер -->
@@ -41,96 +61,425 @@
             </div>
         </div>
     </div>
-    <div class="header__zagolovok">
-        <div class="header__zagolovok2 ">
-            <h1 class="h1__zagolovok2 ">Фитнес-Клуб Exodus</h1>
-            <p class="p__zagolovok2">Мы стремимся помочь вам преобразить свое тело и разум с помощью фитнеса.</p>
-            <div class="aboniment__btn2">
-                <button class="see__abon2 "><a class="a__abon" href="">Смотреть абонименты</a></button>
+    <div class="directions wow animate__backInUp">
+        <h1 class="directions__title">Наши направления</h1>
+        <nav class="directions__nav">
+            <button class="directions__btn" id="gym">Тренажёрный зал</button>
+            <button class="directions__btn" id="group-training">Групповые тренировки</button>
+            <button class="directions__btn" id="pool">Бассейн</button>
+            <button class="directions__btn" id="spa">SPA</button>
+            <button class="directions__btn" id="children">Детский клуб</button>
+        </nav>
+        <div class="swiper mySwiper directions-nav__mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide__nav">
+                    <button class="directions__btn" id="gym__mobile">Тренажёрный зал</button>
+                </div>
+                <div class="swiper-slide swiper-slide__nav">
+                    <button class="directions__btn" id="group-training__mobile">Групповые тренировки</button>
+                </div>
+                <div class="swiper-slide swiper-slide__nav">
+                    <button class="directions__btn" id="spa__mobile">SPA</button>
+                </div>
+                <div class="swiper-slide swiper-slide__nav">
+                    <button class="directions__btn" id="children__mobile">Детский клуб</button>
+                </div>
+                <div class="swiper-slide swiper-slide__nav">
+                    <button class="directions__btn" id="pool__mobile">Бассейн</button>
+                </div>
             </div>
-            <div class="contact">
-                <h1 class="h1__contact">Мы в социальныз сетях:</h1>
-                <div class="contact__icon">
-                    <svg class="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                    <svg class="vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z"/></svg>
-                    <svg class="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+        </div>
+        <div class="directions-info">
+            <div class="gym__container" id="gym__container">
+                <div class="gym__card">
+                    <img class="card-img" src="../direction-img/gym/strength-training.jpg" alt="">
+                    <div class="card-info">
+                        <h1 class="card-title">Силовые тренировки</h1>
+                        <p class="card-text">Силовые тренировки направлены на развитие мышечной силы и массы. Включают в
+                            себя базовые упражнения с использованием свободных весов и тренажеров, таких как приседания,
+                            жим лежа и становая тяга. Хороший вариант для повышения общей физической силы.</p>
+                    </div>
+                </div>
+                <div class="gym__card">
+                    <div class="card-info">
+                        <h1 class="card-title">Кардионагрузка</h1>
+                        <p class="card-text">Кардионагрузка включает в себя аэробные упражнения, такие как бег на
+                            беговой дорожке, велотренажер или занятия на эллиптическом тренажере. Это направление
+                            помогает улучшить выносливость, сжигать калории и укреплять сердечно-сосудистую систему.</p>
+                    </div>
+                    <img class="card-img" src="../direction-img/gym/cardio-traning.jpg" alt="">
+                </div>
+                <div class="gym__card">
+                    <img class="card-img" src="../direction-img/gym/functional-training.jpg" alt="">
+                    <div class="card-info">
+                        <h1 class="card-title">Функциональный тренинг</h1>
+                        <p class="card-text">Функциональные тренировки фокусируются на упражнениях, которые имитируют
+                            движения из повседневной жизни. Используются различные тренажеры и оборудование, такие как
+                            гантели, маты и kettlebells. Эти тренировки способствуют улучшению координации, баланса и
+                            гибкости.</p>
+                    </div>
+                </div>
+                <div class="gym__card">
+                    <div class="card-info">
+                        <h1 class="card-title">Персональные тренировки</h1>
+                        <p class="card-text">Если вы хотите получить индивидуальную программу тренировок, наши
+                            профессиональные тренеры всегда готовы помочь вам. Мы разработаем специальный план
+                            тренировок, учитывая ваши физические возможности и цели.</p>
+                    </div>
+                    <img class="card-img" src="../direction-img/gym/personal-training.jpg" alt="">
+                </div>
+            </div>
+            <!--  -->
+            <div class="group-training" id="group-training-container">
+                <div class="group-training-card">
+                    <img src="../direction-img/group-training/pole-dance.jpg" alt="" class="card-img">
+                    <div class="card-info">
+                        <h1 class="card-title">Pole dance</h1>
+                        <p class="card-text">Pole Dance – это грациозный, полюбившийся миллионам женщин во всем мире
+                            спорт, который способствует гармонизации всего тела. Танцы на пилоне характеризуются
+                            изобилием сложных акробатических трюков в совокупности с хореографией и даже актерским
+                            мастерством</p>
+                    </div>
+                </div>
+                <div class="group-training-card">
+                    <div class="card-info">
+                        <h1 class="card-title">Yoga</h1>
+                        <p class="card-text">Йога – это система физических практик, направленная на укрепление тела,
+                            развитие гибкости и улучшение внутреннего спокойствия. В зале могут проводиться различные
+                            стили йоги</p>
+                    </div>
+                    <img src="../direction-img/group-training/yoga.jpg" alt="" class="card-img">
+                </div>
+                <div class="group-training-card">
+                    <img src="../direction-img/group-training/super-nuts.jpg" alt="" class="card-img">
+                    <div class="card-info">
+                        <h1 class="card-title">Super-Nuts</h1>
+                        <p class="card-text">SuperNuts — это программа групповых тренировок, направленная на построение
+                            гармонично развитого, функционального стройного тела. Это силовые тренировки с акцентом на
+                            ягодицы и пресс. Занятия включают в себя упражнения с оборудованием и собственным весом!
+                        </p>
+                    </div>
+                </div>
+                <div class="group-training-card">
+                    <div class="card-info">
+                        <h1 class="card-title">BodyPump</h1>
+                        <p class="card-text">BodyPUMP - это силовая тренировка со штангой для тех, кто хочет добиться
+                            хорошей физической формы за короткий срок.
+                            В тренировке BODYPUMP используются многоповторные упражнения с легкими и средними весами,
+                            которые прорабатывают все основные группы мышц. </p>
+                    </div>
+                    <img src="../direction-img/group-training/bodyPump.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <!--  -->
+            <div class="pool" id="pool-container">
+                <div class="pool__card">
+                    <img class="card-img" src="../direction-img/pool/water-aerobics.jpeg" alt="">
+                    <div class="pool-card-info">
+                        <h1 class="card-title">Аквааэробика</h1>
+                        <p class="card-text">Занятия в воде, которые комбинируют аэробные упражнения и водные элементы.
+                            Отлично подходят для улучшения сердечно-сосудистой системы, укрепления мышц и снижения
+                            нагрузки на суставы.</p>
+                    </div>
+                </div>
+                <div class="pool__card">
+                    <div class="pool-info">
+                        <h1 class="card-title">Плавание</h1>
+                        <p class="card-text">Тренировки по улучшению техники плавания в различных стилях (кроль, брасс,
+                            на спине и баттерфляй). Подходит как для начинающих, так и для опытных пловцов, помогает
+                            развивать выносливость и силу.</p>
+                    </div>
+                    <img class="card-img" src="../direction-img/pool/swimming.webp" alt="">
+                </div>
+                <div class="pool__card">
+                    <img class="card-img" src="../direction-img/pool/water-pilates.webp" alt="">
+                    <div class="card-info">
+                        <h1 class="card-title">Водный Пилатес</h1>
+                        <p class="card-text">Упражнения из пилатеса, адаптированные для выполнения в воде.
+                            Сосредотачивается на развитии силы кора, улучшении гибкости и общего тонуса мышц, а также на
+                            восстановлении после травм.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- spa -->
+            <div class="spa" id="spa-container">
+                <div class="spa__card">
+                    <img src="../direction-img/spa/cryotherapy.jpg" alt="" class="card-img">
+                    <div class="card-info">
+                        <h1 class="card-title">Криотерапия</h1>
+                        <p class="card-text">Использование холодных температур для снижения воспаления, улучшения
+                            циркуляции и снятия болезненности. Криосауна или локальные криолокации могут быть
+                            интегрированы в режим восстановления, чтобы помочь спортсменам быстрее восстановиться после
+                            физических нагрузок.</p>
+                    </div>
+                </div>
+                <div class="spa__card">
+                    <div class="card-info">
+                        <h1 class="card-title">Сауны</h1>
+                        <p class="card-text">Использование паровых и сухих саун для детоксикации и расслабления. Финская
+                            сауна, инфракрасная сауна или паровая комната помогают улучшить кровообращение, ускорить
+                            восстановление после тренировок, расслабить мышцы и снизить стресс.</p>
+                    </div>
+                    <img src="../direction-img/spa/Fitness-saunas.jpg" alt="" class="card-img">
+                </div>
+                <div class="spa__card">
+                    <img src="../direction-img/spa/Restorative-procedures.jpg" alt="" class="card-img">
+                    <div class="card-info">
+                        <h1 class="card-title">Восстановительные процедуры</h1>
+                        <p class="card-text">Посттренировочные массажи и терапевтические процедуры, направленные на
+                            восстановление мышц и суставов. Включают в себя спортивный массаж, миофасциальный релиз и
+                            растяжку. Эти процедуры помогают уменьшить мышечную боль, улучшают мобильность и ускоряют
+                            восстановление после интенсивных тренировок.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- children -->
+            <div class="children" id="children-container">
+                <div class="children-card">
+                    <img src="../direction-img/children/children-section.webp" alt="" class="card-img">
+                    <div class="card-info">
+                        <h1 class="card-title">Спортивные секции</h1>
+                        <p class="card-text">Организация различных секций для детей, ориентированных на разные виды
+                            спорта, такие как футбол, баскетбол, гимнастика или плавание. Каждая секция может включать в
+                            себя занятия по технике, тактике и физической подготовке, что позволит детям развивать свои
+                            спортивные навыки и укреплять здоровье.</p>
+                    </div>
+                </div>
+                <div class="children-card">
+                    <div class="card-info">
+                        <h1 class="card-title"> Игровые фитнес-программы</h1>
+                        <p class="card-text">Создание игровых программ, которые сочетали бы физическую активность и
+                            игру. Например, занятия с элементами нижнего и верхнего боевого искусства, мультиспорт
+                            (комплексный подход к тренировкам) или фитнес-танцы. Это поможет детям развивать
+                            координацию, гибкость и выносливость в увлекательной форме.</p>
+                    </div>
+                    <img src="../direction-img/children/play-section.jpg" alt="" class="card-img">
+                </div>
+                <div class="children-card">
+                    <img src="../direction-img/children/Educational.webp" alt="" class="card-img">
+                    <div class="card-info">
+                        <h1 class="card-title">Развивающие мастер-классы</h1>
+                        <p class="card-text">Проведение спортивных лагерей с тематическими мастер-классами, где дети
+                            могут попробовать себя в разных видах спорта, обучиться новым навыкам, а также участвовать в
+                            соревнованиях. Это поможет развивать командный дух, лидерские качества и уверенность в себе.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="directions-info__mobile">
+            <div class="gym__container" id="gym__container__mobile">
+                <div class="gym__card">
+                    <h1 class="card-title">Силовые тренировки</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/gym/strength-training.jpg" alt="">
+                    </div>
+                    <p class="card-text">Силовые тренировки направлены на развитие мышечной силы и массы. Включают в
+                        себя базовые упражнения с использованием свободных весов и тренажеров, таких как приседания,
+                        жим лежа и становая тяга. Хороший вариант для повышения общей физической силы.</p>
+                </div>
+                <div class="gym__card">
+                    <h1 class="card-title">Кардионагрузка</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/gym/cardio-traning.jpg" alt="">
+                    </div>
+                    <p class="card-text">Кардионагрузка включает в себя аэробные упражнения, такие как бег на
+                        беговой дорожке, велотренажер или занятия на эллиптическом тренажере. Это направление
+                        помогает улучшить выносливость, сжигать калории и укреплять сердечно-сосудистую систему.</p>
+                </div>
+                <div class="gym__card">
+                    <h1 class="card-title">Функциональный тренинг</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/gym/functional-training.jpg" alt="">
+                    </div>
+                    <p class="card-text">Функциональные тренировки фокусируются на упражнениях, которые имитируют
+                        движения из повседневной жизни. Используются различные тренажеры и оборудование, такие как
+                        гантели, маты и kettlebells. Эти тренировки способствуют улучшению координации, баланса и
+                        гибкости.</p>
+                </div>
+                <div class="gym__card">
+                    <h1 class="card-title">Персональные тренировки</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/gym/personal-training.jpg" alt="">
+                    </div>
+                    <p class="card-text">Если вы хотите получить индивидуальную программу тренировок, наши
+                        профессиональные тренеры всегда готовы помочь вам. Мы разработаем специальный план
+                        тренировок, учитывая ваши физические возможности и цели.</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="group-training" id="group-training-container__mobile">
+                <div class="group-training-card">
+                    <h1 class="card-title">Pole dance</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/group-training/pole-dance.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Pole Dance – это грациозный, полюбившийся миллионам женщин во всем мире
+                        спорт, который способствует гармонизации всего тела. Танцы на пилоне характеризуются
+                        изобилием сложных акробатических трюков в совокупности с хореографией и даже актерским
+                        мастерством</p>
+                </div>
+                <div class="group-training-card">
+                    <h1 class="card-title">Yoga</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/group-training/yoga.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Йога – это система физических практик, направленная на укрепление тела,
+                        развитие гибкости и улучшение внутреннего спокойствия. В зале могут проводиться различные
+                        стили йоги</p>
+                </div>
+                <div class="group-training-card">
+                    <h1 class="card-title">Super-Nuts</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/group-training/super-nuts.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">SuperNuts — это программа групповых тренировок, направленная на построение
+                        гармонично развитого, функционального стройного тела. Это силовые тренировки с акцентом на
+                        ягодицы и пресс. Занятия включают в себя упражнения с оборудованием и собственным весом!
+                    </p>
+                </div>
+                <div class="group-training-card">
+                    <h1 class="card-title">BodyPump</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/group-training/bodyPump.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">BodyPUMP - это силовая тренировка со штангой для тех, кто хочет добиться
+                        хорошей физической формы за короткий срок.
+                        В тренировке BODYPUMP используются многоповторные упражнения с легкими и средними весами,
+                        которые прорабатывают все основные группы мышц. </p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="pool" id="pool-container__mobile">
+                <div class="pool__card">
+
+                    <h1 class="card-title">Аквааэробика</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/pool/water-aerobics.jpeg" alt="">
+                    </div>
+                    <p class="card-text">Занятия в воде, которые комбинируют аэробные упражнения и водные элементы.
+                        Отлично подходят для улучшения сердечно-сосудистой системы, укрепления мышц и снижения
+                        нагрузки на суставы.</p>
+                </div>
+                <div class="pool__card">
+                    <h1 class="card-title">Плавание</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/pool/swimming.webp" alt="">
+                    </div>
+                    <p class="card-text">Тренировки по улучшению техники плавания в различных стилях (кроль, брасс,
+                        на спине и баттерфляй). Подходит как для начинающих, так и для опытных пловцов, помогает
+                        развивать выносливость и силу.</p>
+                </div>
+                <div class="pool__card">
+                    <h1 class="card-title">Водный Пилатес</h1>
+                    <div class="card__img">
+                        <img class="card-img" src="../direction-img/pool/water-pilates.webp" alt="">
+                    </div>
+                    <p class="card-text">Упражнения из пилатеса, адаптированные для выполнения в воде.
+                        Сосредотачивается на развитии силы кора, улучшении гибкости и общего тонуса мышц, а также на
+                        восстановлении после травм.</p>
+                </div>
+            </div>
+            <!-- spa -->
+            <div class="spa" id="spa-container__mobile">
+                <div class="spa__card">
+                    <h1 class="card-title">Криотерапия</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/spa/cryotherapy.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Использование холодных температур для снижения воспаления, улучшения
+                        циркуляции и снятия болезненности. Криосауна или локальные криолокации могут быть
+                        интегрированы в режим восстановления, чтобы помочь спортсменам быстрее восстановиться после
+                        физических нагрузок.</p>
+                </div>
+                <div class="spa__card">
+                    <h1 class="card-title">Сауны</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/spa/Fitness-saunas.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Использование паровых и сухих саун для детоксикации и расслабления. Финская
+                        сауна, инфракрасная сауна или паровая комната помогают улучшить кровообращение, ускорить
+                        восстановление после тренировок, расслабить мышцы и снизить стресс.</p>
+                </div>
+                <div class="spa__card">
+                    <h1 class="card-title">Восстановительные процедуры</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/spa/Restorative-procedures.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Посттренировочные массажи и терапевтические процедуры, направленные на
+                        восстановление мышц и суставов. Включают в себя спортивный массаж, миофасциальный релиз и
+                        растяжку. Эти процедуры помогают уменьшить мышечную боль, улучшают мобильность и ускоряют
+                        восстановление после интенсивных тренировок.</p>
+                </div>
+            </div>
+            <!-- children -->
+            <div class="children" id="children-container__mobile">
+                <div class="children-card">
+                    <h1 class="card-title">Спортивные секции</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/children/children-section.webp" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Организация различных секций для детей, ориентированных на разные виды
+                        спорта, такие как футбол, баскетбол, гимнастика или плавание. Каждая секция может включать в
+                        себя занятия по технике, тактике и физической подготовке, что позволит детям развивать свои
+                        спортивные навыки и укреплять здоровье.</p>
+                </div>
+                <div class="children-card">
+                    <h1 class="card-title"> Игровые фитнес-программы</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/children/play-section.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Создание игровых программ, которые сочетали бы физическую активность и
+                        игру. Например, занятия с элементами нижнего и верхнего боевого искусства, мультиспорт
+                        (комплексный подход к тренировкам) или фитнес-танцы. Это поможет детям развивать
+                        координацию, гибкость и выносливость в увлекательной форме.</p>
+                </div>
+                <div class="children-card">
+                    <h1 class="card-title">Развивающие мастер-классы</h1>
+                    <div class="card__img">
+                        <img src="../direction-img/children/Educational.webp" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">Проведение спортивных лагерей с тематическими мастер-классами, где дети
+                        могут попробовать себя в разных видах спорта, обучиться новым навыкам, а также участвовать в
+                        соревнованиях. Это поможет развивать командный дух, лидерские качества и уверенность в себе.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="direction-container">
-        <h1 class="h1-direction">Наши направления</h1>
-        <div class="direction-info">
-            <div class="functional-training">
-                <img src="../direction-img/functional-training.jpg" alt="" class="img-direction">
-                <div class="direction-info2">
-                    <h1 class="h1-direction-info">Функциональный тренинг</h1>
-                    <p class="p-direction">Наш клуб предлагает различные программы функционального тренинга, которые помогут улучшить вашу силу, выносливость и гибкость. Мы также проводим занятия с использованием TRX, батутов и других современных оборудований.</p>
-                    <button class="btn-direction"><a class="a-direction" href="">Записаться</a></button>
+
+
+    <footer class="footer">
+        <div class="footer__flex">
+            <img class="footer__logo" src="../img/index/logotip.png" alt="">
+            <div class="footer__contact">
+                <h1 class="footer__title">Мы в социальныз сетях:</h1>
+                <div class="footer__icon">
+                    <a class="" href=""><svg class="footer__instagram button__hover" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a class="" href=""><svg class="footer__vk button__hover" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z" />
+                        </svg></a>
+                    <a class="" href=""><svg class="footer__facebook button__hover" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                        </svg></a>
                 </div>
             </div>
-            <div class="cardio-training">
-                <img src="../direction-img/cardio-traning.jpg" alt="" class="img-direction">
-                <div class="direction-info2">
-                    <h1 class="h1-direction-info">Кардио тренировки</h1>
-                    <p class="p-direction">Если вы любите кардио тренировки, то вы найдете у нас много интересных программ, включая беговые тренировки, аэробику, Cycling и многое другое. Наши инструкторы помогут вам разработать оптимальную программу для достижения ваших фитнес-целей.</p>
-                    <button class="btn-direction"><a class="a-direction" href="">Записаться</a></button>
-                </div> 
-            </div>
-            <div class="strenght-training">
-                <img src="../direction-img/strength-training.jpg" alt="" class="img-direction">
-                <div class="direction-info2">
-                    <h1 class="h1-direction-info">Силовые тренировки</h1>
-                    <p class="p-direction">Для тех, кто стремится улучшить свою мускулатуру и силу, у нас есть широкий выбор силовых тренировок, включая тренировки с отягощениями, пилатес, йогу и многое другое. Наши профессиональные тренеры помогут вам правильно выполнять упражнения и достичь желаемых результатов.</p>
-                    <button class="btn-direction"><a class="a-direction" href="">Записаться</a></button>
-                </div>
-            </div>
-            <div class="group-training">
-                <img src="../direction-img/group-training.jpg" alt="" class="img-direction">
-                <div class="direction-info2">
-                    <h1 class="h1-direction-info">Групповые занятия</h1>
-                    <p class="p-direction">У нас есть множество групповых занятий, которые позволят вам заниматься в компании друзей и мотивировать друг друга. Вы можете выбрать из разнообразных программ, включая зумбу, танцы, йогу, пилатес и многое другое</p>
-                    <button class="btn-direction"><a class="a-direction" href="">Записаться</a></button>
-                </div>
-            </div>
-            <div class="personal-training">
-                <img src="../direction-img/personal-training.jpg" alt="" class="img-direction">
-                <div class="direction-info2">
-                    <h1 class="h1-direction-info">Персональные тренировки</h1>
-                    <p class="p-direction">Если вы хотите получить индивидуальную программу тренировок, наши профессиональные тренеры всегда готовы помочь вам. Мы разработаем специальный план тренировок, учитывая ваши физические возможности и цели.</p>
-                    <button class="btn-direction"><a class="a-direction" href="">Записаться</a></button>
-                </div>
-            </div>
-            <div class="children-training">
-                <img src="../direction-img/children-training.jpg" alt="" class="img-direction">
-                <div class="direction-info2">
-                    <h1 class="h1-direction-info">Детские программы</h1>
-                    <p class="p-direction"> Мы также предлагаем занятия для детей различных возрастов, чтобы помочь им развить силу, гибкость и координацию. Наши инструкторы создадут интересные и полезные занятия, которые будут подходить для каждого ребенка.</p>
-                    <button class="btn-direction"><a class="a-direction" href="">Записаться</a></button>
-                </div>
+            <div class="footer__callback">
+                <p class="footer__text"><a class="header__text-info" href="">+7(927)123-12-234</a></p>
+                <button class="footer__btn button__hover"><a class="footer__a" href="">Обратный звонок</a></button>
             </div>
         </div>
-    </div>
-    <div class="down__menu">
-        <div class="down__menu__flex">
-            <div class="logo-down">
-                <div class="logotip">
-                    <img class="logotip__down" src="../img/index/logotip.png" alt="">
-                </div>
-            </div>
-            <div class="down__contact">
-                <h1 class="h1__contact__down">Мы в социальныз сетях:</h1>
-                <div class="contact__icon__down">
-                    <svg class="instagram__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                    <svg class="vk__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z"/></svg>
-                    <svg class="facebook__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-                </div>
-            </div>
-            <div class="callback__menu__down">
-                <p class="number__info__down">+7(927)123-12-234</p>
-                <button class="callback__down"><a class="a__callback" href="">Обратный звонок</a></button>
-            </div>
-        </div>
-    <script src="../js/index.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/directions.js"></script>
 </body>
+
 </html>
