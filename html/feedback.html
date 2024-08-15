@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- подключение стилей анимаций -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/libs/animate.css">
+    <script src="../dist/wow.min.js"></script>
+    <script> new WOW().init();</script>
     <!-- Open sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,28 +16,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img/index/logotip.png">
+    <link rel="icon" type="image/png" href="../img/index/logotip.png">
     <link rel="stylesheet" href="../css/feedback.css">
-    <link rel="stylesheet" href="../css/feedback-mobile.css">
+    <link rel="stylesheet" href="../css/burger-menu-style.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Отзывы</title>
 </head>
 <body>
     <div class="header__menu">
-        <div class="logo">
-            <img class="logotip" src="../img/index/logotip.png" alt="">
-        </div>
-        <div class="btn__info">
-            <p class="number__info">+7(927)123-12-234</p>
-            <button class="callback"><a class="a__callback" href="">Обратный звонок</a></button>
+        <img class="header__logo" src="../img/index/logotip.png" alt="">
+        <div class="header__info">
+            <a href="" class="header__text-info">
+                <p class="header__text-info">+7(927)123-12-234</p>
+            </a>
+            <button class="callback header__button button__hover"><a class="a__callback header__button-a"
+                    href="">Обратный звонок</a></button>
             <!-- Информация после нажатия бургер кнопки -->
             <nav class="nav__info">
                 <nav class="nav__burger1">Основное</nav>
                 <ul class="ul__burger">
-                    <a class="a__burger" href="../index.html"><li class="li__burger">Главная</li></a>
-                    <a class="a__burger" href="../html/about-us.html"><li class="li__burger">О нас</li></a>
-                    <a class="a__burger" href="../html/trener.html"><li class="li__burger">Тренерский состав</li></a>
-                    <a class="a__burger" href="../html/feedback.html"><li class="li__burger">Отзывы</li></a>
-                    <a class="a__burger" href="../html/directions.html"><li class="li__burger">Наши направления</li></a>
+                    <a class="a__burger" href="../index.html">
+                        <li class="li__burger">Главная</li>
+                    </a>
+                    <a class="a__burger" href="../html/about-us.html">
+                        <li class="li__burger">О нас</li>
+                    </a>
+                    <a class="a__burger" href="../html/trener.html">
+                        <li class="li__burger">Тренерский состав</li>
+                    </a>
+                    <a class="a__burger" href="../html/feedback.html">
+                        <li class="li__burger">Отзывы</li>
+                    </a>
+                    <a class="a__burger" href="../html/directions.html">
+                        <li class="li__burger">Наши направления</li>
+                    </a>
                 </ul>
             </nav>
             <!-- Иконка Бургер -->
@@ -41,91 +59,102 @@
             </div>
         </div>
     </div>
-    <div class="header">
-        <div class="header__zagolovok ">
-            <h1 class="h1__zagolovok">Фитнес-Клуб Exodus</h1>
-            <p class="p__zagolovok">Мы стремимся помочь вам преобразить свое тело и разум с помощью фитнеса.</p>
-            <div class="aboniment__btn">
-                <button class="see__abon "><a class="a__abon" href="">Смотреть абонименты</a></button>
+    <!-- feedback-container -->
+    <div class="feedback">
+        <h1 class="feedback__title">Узнайте, что думают <span>клиенты</span> о нашей работе</h1>
+        <div class="swiper mySwiper" id="feedback__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide feedback-card">
+                <div class="feedback-client__info">
+                    <img src="../feedback-img/feedback-foto1.jpg" alt="" class="feedback-client__img">
+                    <h1 class="feedback-client__name">Кондрашев Владимир</h1>
+                </div>
+                <div class="feedback-client__text">
+                    <p class="feedback__text"><span>" </span>Отличный тренажерный зал с большим выбором современного оборудования. Тренеры всегда рады помочь и подсказать в выполнении упражнений. Рекомендую! <span>"</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide feedback-card">
+                <div class="feedback-client__info">
+                    <img src="../feedback-img/feedback-foto2.jpg" alt="" class="feedback-client__img">
+                    <h1 class="feedback-client__name">Белов Дмитрий</h1>
+                </div>
+                <div class="feedback-client__text">
+                    <p class="feedback__text"><span>" </span>Посещаю этот тренажерный зал уже несколько месяцев и очень довольна результатами. Удобное расположение, чистота и порядок, приятная атмосфера. Рекомендую!<span> "</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide feedback-card">
+                <div class="feedback-client__info">
+                    <img src="../feedback-img/feedback-foto3.jpg" alt="" class="feedback-client__img">
+                    <h1 class="feedback-client__name">Марк Цукерберг</h1>
+                </div>
+                <div class="feedback-client__text">
+                    <p class="feedback__text"><span>" </span>Здесь я нашел все, что мне нужно для эффективных тренировок. Профессиональные тренеры, удобное расположение, отличное оборудование. Очень доволен!<span> "</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide feedback-card">
+                <div class="feedback-client__info">
+                    <img src="../feedback-img/feedback-foto4.jpg" alt="" class="feedback-client__img">
+                    <h1 class="feedback-client__name">Павел Дуров</h1>
+                </div>
+                <div class="feedback-client__text">
+                    <p class="feedback__text"><span>" </span>Очень хороший тренажерный зал, где можно качественно заниматься спортом. Большой выбор тренажеров, светлая зона для занятий, адекватные цены. Рекомендую!<span> "</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide feedback-card">
+                <div class="feedback-client__info">
+                    <img src="../feedback-img/feedback-foto5.jpg" alt="" class="feedback-client__img">
+                    <h1 class="feedback-client__name">Юрьев Андрей</h1>
+                </div>
+                <div class="feedback-client__text">
+                    <p class="feedback__text"><span>" </span>Тренажерный зал супер! Здесь есть все необходимые условия для тренировок: современное оборудование, дружелюбные тренеры, удобное расположение. Очень доволен!<span> "</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide feedback-card">
+                <div class="feedback-client__info">
+                    <img src="../feedback-img/feedback-foto6.jpg" alt="" class="feedback-client__img">
+                    <h1 class="feedback-client__name">Осипова Эмилия</h1>
+                </div>
+                <div class="feedback-client__text">
+                    <p class="feedback__text"><span>" </span>Отличное место для занятий спортом! Чистый, просторный зал, дружелюбный персонал, разнообразные тренировки. Лучший выбор для тех, кто хочет привести себя в форму!<span> "</span></p>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="contact">
-            <h1 class="h1__contact">Мы в социальныз сетях:</h1>
-            <div class="contact__icon">
-                <svg class="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                <svg class="vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z"/></svg>
-                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-            </div>
-        </div>
+            <div class="swiper-pagination"></div>
+          </div>
     </div>
-    <div class="feedback-container">
-        <h1 class="h1-feedback">Отзывы наших клиентов <svg class="feedback-svg-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9c.1-.2 .2-.3 .3-.5z"/></svg></h1>
-        <div class="feedback-block">
-            <div class="feedback-card">
-                <img class="img-feedback" src="../feedback-img/feedback-foto1.jpg" alt="">
-                <div class="feedback-info">
-                    <p class="p-info-feedback">"Отличный тренажерный зал с большим выбором современного оборудования. Тренеры всегда рады помочь и подсказать в выполнении упражнений. Рекомендую!"</p>
-                    <h1 class="h1-name"> - Кондрашов Владимир</h1>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__flex">
+            <img class="footer__logo" src="../img/index/logotip.png" alt="">
+            <div class="footer__contact">
+                <h1 class="footer__title">Мы в социальныз сетях:</h1>
+                <div class="footer__icon">
+                    <a class="" href=""><svg class="footer__instagram button__hover" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a class="" href=""><svg class="footer__vk button__hover" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z" />
+                        </svg></a>
+                    <a class="" href=""><svg class="footer__facebook button__hover" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                        </svg></a>
                 </div>
             </div>
-            <div class="feedback-card right-card">
-                <img class="img-feedback" src="../feedback-img/feedback-foto2.jpg" alt="">
-                <div class="feedback-info">
-                    <p class="p-info-feedback">"Посещаю этот тренажерный зал уже несколько месяцев и очень довольна результатами. Удобное расположение, чистота и порядок, приятная атмосфера. Рекомендую!"</p>
-                    <h1 class="h1-name"> - Белов Дмитрий</h1>
-                </div>
-            </div>
-            <div class="feedback-card ">
-                <img class="img-feedback" src="../feedback-img/feedback-foto3.jpg" alt="">
-                <div class="feedback-info">
-                    <p class="p-info-feedback">"Здесь я нашел все, что мне нужно для эффективных тренировок. Профессиональные тренеры, удобное расположение, отличное оборудование. Очень доволен!"</p>
-                    <h1 class="h1-name"> - Марк Цукерберг</h1>
-                </div>
-            </div>
-            <div class="feedback-card right-card">
-                <img class="img-feedback" src="../feedback-img/feedback-foto4.jpg" alt="">
-                <div class="feedback-info">
-                    <p class="p-info-feedback">"Очень хороший тренажерный зал, где можно качественно заниматься спортом. Большой выбор тренажеров, светлая зона для занятий, адекватные цены. Рекомендую!"</p>
-                    <h1 class="h1-name"> - Павел Дуров</h1>
-                </div>
-            </div>
-            <div class="feedback-card">
-                <img class="img-feedback" src="../feedback-img/feedback-foto5.jpg" alt="">
-                <div class="feedback-info">
-                    <p class="p-info-feedback"> "Тренажерный зал супер! Здесь есть все необходимые условия для тренировок: современное оборудование, дружелюбные тренеры, удобное расположение. Очень доволен!"</p>
-                    <h1 class="h1-name"> - Андреев Юрий</h1>
-                </div>
-            </div>
-            <div class="feedback-card right-card">
-                <img class="img-feedback" src="../feedback-img/feedback-foto6.jpg" alt="">
-                <div class="feedback-info">
-                    <p class="p-info-feedback"> "Отличное место для занятий спортом! Чистый, просторный зал, дружелюбный персонал, разнообразные тренировки. Лучший выбор для тех, кто хочет привести себя в форму!"</p>
-                    <h1 class="h1-name"> - Осипова Эмилия</h1>
-                </div>
+            <div class="footer__callback">
+                <p class="footer__text"><a class="header__text-info" href="">+7(927)123-12-234</a></p>
+                <button class="footer__btn button__hover"><a class="footer__a" href="">Обратный звонок</a></button>
             </div>
         </div>
-    </div>
-    <div class="down__menu">
-        <div class="down__menu__flex">
-            <div class="logo">
-                <div class="logotip">
-                    <img class="logotip__down" src="../img/index/logotip.png" alt="">
-                </div>
-            </div>
-            <div class="down__contact">
-                <h1 class="h1__contact__down">Мы в социальныз сетях:</h1>
-                <div class="contact__icon__down">
-                    <svg class="instagram__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                    <svg class="vk__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z"/></svg>
-                    <svg class="facebook__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-                </div>
-            </div>
-            <div class="callback__menu__down">
-                <p class="number__info__down">+7(927)123-12-234</p>
-                <button class="callback__down"><a class="a__callback" href="">Обратный звонок</a></button>
-            </div>
-        </div>
-    </div>
-    <script src="../js/index.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/feedback.js"></script>
 </body>
 </html>

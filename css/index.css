@@ -10,7 +10,6 @@ body {
     --second-color-text: coral;
     --index: calc(1vw + 1vh);
 }
-
 button{
     border-style: none;
 }
