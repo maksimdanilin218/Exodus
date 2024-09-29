@@ -753,25 +753,25 @@ button{
 }
 
 #feedback__card1 {
-    background-image: url(/trener__img/index.img/feedback-index/feedback.jpg);
+    background-image: url(../trener__img/index.img/feedback-index/feedback.jpg);
 }
 
 #feedback__card2 {
-    background-image: url(/trener__img/index.img/feedback-index/feedback2.jpg);
+    background-image: url(../trener__img/index.img/feedback-index/feedback2.jpg);
     background-position: -120 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #feedback__card3 {
-    background-image: url(/trener__img/index.img/feedback-index/feedback3.jpg);
+    background-image: url(../trener__img/index.img/feedback-index/feedback3.jpg);
     background-position: -80 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #feedback__card4 {
-    background-image: url(/trener__img/index.img/feedback-index/feedback4.jpg);
+    background-image: url(../trener__img/index.img/feedback-index/feedback4.jpg);
     background-position: -80 0;
     background-size: cover;
     background-repeat: no-repeat;
